@@ -4,7 +4,11 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	/**/
+	.box2
+		.art-img
+			width: 42%
+			height: 225px
+
 
 
 /* Medium Devices, Desktops */
@@ -28,15 +32,15 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-		.social
-			justify-content: center
+	.social
+		justify-content: center
 		
-		.header-body
-			h1
-				font-size: 4rem
+	.header-body
+		h1
+			font-size: 4rem
 
-			p 
-				font-size: 1.5rem
+		p 
+			font-size: 1.5rem
 
 
 /* Extra Small Devices, Phones */
@@ -47,8 +51,26 @@
 	.header-body
 		h1
 			font-size: 2.5rem
-		
 
+		p 
+			font-size: 1.5rem
+			margin-bottom: 0
+		
+	.box2
+		.art-img
+			width: 70%
+			height: 250px
+	
+	.chef-img 
+		img 
+    	margin: 0px 10px
+
+  .quote
+		p 
+			&:before
+				left: -30px
+			&:after
+				right: -30px
 
 
 /* Custom, iPhone Retina */

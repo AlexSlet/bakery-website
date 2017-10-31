@@ -153,7 +153,7 @@ body
 		font-size: 5.75rem
 		text-shadow: 0 1px 0 #000
 		white-space: nowrap
-		margin-top: 100px
+		margin-top: 80px
 
 	p 
 		color: #fff
@@ -218,6 +218,160 @@ body
 
 .menu-burger-active
 	right: 0 
+
+.ArtOfCakes
+	background-image: url(../img/Bg-4.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	padding: 100px 0
+	border-top: 10px solid #fff
+	position: relative
+	&:before
+		position: absolute
+		content: ''
+		width: 80px 
+		height: 80px
+		border-radius: 50%
+		background-color: #fff
+		top: -40px
+		left: calc(50% - 40px)
+	&:after
+		position: absolute
+		content: ''
+		width: 106px 
+		height: 106px
+		background-image: url(../img/bread-logo.png)
+		top: -53px
+		left: calc(50% - 53px)
+
+.box1
+	text-align: center
+	padding: 0 60px
+	margin: 0 auto
+	h2
+		font-family: $tittle-font
+		font-size: 48px
+		color: $accentColor
+		margin-bottom: -15px
+		margin-top: 0
+	span
+		display: inline-block
+		font-family: $tittle-font
+		font-size: 14px
+		color: $secondColor
+		text-transform: uppercase
+		margin-bottom: 65px
+		letter-spacing: 1px
+
+	p
+		font-size: 14px
+		line-height: 1.8
+		color: $accentColor
+		font-weight: bold
+		letter-spacing: 1px
+
+	h3
+		font-family: $tittle-font
+		font-size: 24px
+		color: $accentColor
+
+.chef-img
+	display: flex
+	width: 80%
+	margin: auto
+	justify-content: center
+	align-items: center
+	position: relative
+	span
+		font-size: 24px
+		color: $accentColor
+		padding: 10px
+		font-family: $menu-font
+		text-transform: none
+		margin: 0
+		width: 110px
+		border-bottom: 1px solid #d7d5ca
+		border-top: 1px solid #d7d5ca
+	img
+		margin: 0 25px
+
+.quote
+	p 
+		font-family: 'Scriptina'
+		font-size: 24px
+		color: $secondColor
+		font-weight: 400
+		position: relative
+		line-height: 1.3
+		&:before
+			content: '\201c'
+			position: absolute
+			font-family: 'Times New Roman'
+			font-size: 60px 
+			color: #56534c
+			opacity: .5
+			top: -15px
+			left: 0
+		&:after
+			content: '\201c'
+			position: absolute
+			font-family: 'Times New Roman'
+			font-size: 60px 
+			color: #56534c
+			opacity: .5
+			bottom: -50px
+			right: 0
+			transform: scaleX(-1)
+
+.box2
+	display: flex
+	justify-content: center
+	flex-wrap: wrap
+	flex-direction: row
+	padding: 0
+	margin: 0 auto
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		width: 247px
+		height: 247px
+		background: url(../img/TSG.png)
+		z-index: 9
+		top: calc(50% - 123.5px)
+		left: calc(50% - 123.5px)
+		opacity: 0.95
+
+	.art-img
+		width: 46.5%
+		height: 250px
+		margin: 10px
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			border: 5px solid #fff
+			top: 6px
+			left: 6px
+			right: 6px
+			bottom: 6px
+
+	.img1
+		background: url(../img/AofC1.jpg)
+		background-repeat: no-repeat
+		background-size: cover
+	.img2
+		background: url(../img/AofC2.jpg)
+		background-repeat: no-repeat
+		background-size: cover
+	.img3
+		background: url(../img/AofC3.jpg)
+		background-repeat: no-repeat
+		background-size: cover
+	.img4
+		background: url(../img/AofC4.jpg)
+		background-repeat: no-repeat
+		background-size: cover
 
 
 @import "media" // Всегда в конце
