@@ -133,12 +133,20 @@ body
 .hamburger
 	display: none
 	position: fixed
+	width: 70px
+	height: 70px
 	right: 10px
 	top: 5px
-	z-index: 9
+	z-index: 999
+	background: #fff
+	border-radius: 50%
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.4)
 	.hamburger-box
+		position: absolute
+		top: 22px
 		.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before
-			background: #fff
+			background: #000
+			
 
 
 .header-body
@@ -248,27 +256,28 @@ body
 	text-align: center
 	padding: 0 60px
 	margin: 0 auto
-	h2
-		font-family: $tittle-font
-		font-size: 48px
-		color: $accentColor
-		margin-bottom: -15px
-		margin-top: 0
-	span
-		display: inline-block
-		font-family: $tittle-font
-		font-size: 14px
-		color: $secondColor
-		text-transform: uppercase
-		margin-bottom: 65px
-		letter-spacing: 1px
+.h2
+	font-family: $tittle-font
+	font-size: 48px
+	color: $accentColor
+	margin-bottom: -15px
+	margin-top: 0
+	white-space: nowrap
+.subTittle
+	display: inline-block
+	font-family: $tittle-font
+	font-size: 14px
+	color: $secondColor
+	text-transform: uppercase
+	margin-bottom: 65px
+	letter-spacing: 1px
 
-	p
-		font-size: 14px
-		line-height: 1.8
-		color: $accentColor
-		font-weight: bold
-		letter-spacing: 1px
+.discription
+	font-size: 14px
+	line-height: 1.8
+	color: $accentColor
+	font-weight: bold
+	letter-spacing: 1px	
 
 	h3
 		font-family: $tittle-font
@@ -373,6 +382,131 @@ body
 		background-repeat: no-repeat
 		background-size: cover
 
+.tastySlider
+	padding: 140px 0 105px 0
+	background: url(../img/Bg-2.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	position: relative
+	.ready-box
+		position: absolute
+		height: 200px
+		width: 200px
+		background: url(../img/land.jpg)
+		top: 100px 
+		right: 95px
+		z-index: 99
+		box-shadow: 11px 11px 90px rgba(0,0,0,0.3)
+		font-family: $tittle-font
+		text-align: center
+		letter-spacing: 3px
+		p
+			text-transform: uppercase
+			color: $secondColor
+			font-size: 18px
+
+		.rb1
+			font-size: 92px
+			color: #dfc691
+			display: block
+			line-height: 1
+
+		.rb2
+			color: #979285
+
+.swiper-container
+
+	.gallery-top
+		width: 78%
+		height: 510px
+		margin-left: 95px
+
+	.gallery-thumbs
+		height: 90px
+		width: 30%
+		position: absolute
+		bottom: 30px
+		right: 16%
+		box-sizing: border-box
+    padding: 10px 0
+		.swiper-wrapper
+			.swiper-slide
+				width: 90px
+				border-radius: 50%
+				opacity: 0.4
+				transition: 0.5s
+			.swiper-slide-active
+				opacity: 1
+
+.swiper-slide 
+  text-align: center
+  font-size: 18px
+  background-repeat: no-repeat
+  padding-left: 95px
+    
+.swiper-pagination-bullet-active 
+  color:#fff
+  opacity: .4
+
+.slider-img
+	height: 510px
+
+.sl-img-1
+	background: url(../img/pancake.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: 67% 10%
+
+.sl-img-2
+	background: url(../img/Sendwich.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: 100% 10%
+
+.sl-img-3
+	background: url(../img/berry.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: 8% 10%
+
+.sl-img-4
+	background: url(../img/vegetables.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: 100% 10%
+
+.slider-discript
+	padding: 65px 85px 0 60px
+	text-align: left
+	background: url(../img/mill.png)
+	background-repeat: no-repeat
+	background-position: bottom right
+	background-color: #fff
+
+.swiper-button-next, .swiper-button-prev
+	top: 86%
+	background-image: none !important
+	width: 34px
+	height: 34px
+	border: 2px solid $accentColor
+	border-radius: 50%
+	.fa
+		font-size: 22px
+		text-align: center
+		line-height: 30px
+		display: block
+		color: $accentColor
+
+.swiper-button-next
+	right: 12%
+
+.swiper-button-prev
+	left: 50%
+
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled
+	color: $secondColor
+	opacity: .35
+	border-color: $secondColor
 
 @import "media" // Всегда в конце
 

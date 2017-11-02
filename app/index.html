@@ -17,6 +17,7 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="libs/swiper/dist/css/swiper.min.css">
 
 	<!-- Chrome, Firefox OS and Opera -->
 	<meta name="theme-color" content="#000">
@@ -105,9 +106,9 @@
 					
 					<div class="box1 col-12 col-sm-12 col-md-6 col-lg-6">
 				
-				<h2>Art of cakes</h2>
-				<span>we create delicious memories</span>
-				<p>Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed.</p>
+				<h2 class="h2">Art of cakes</h2>
+				<span class="subTittle">we create delicious memories</span>
+				<p class="discription">Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed.</p>
 				<h3>Chef Cook</h3>
 				<div class="chef-img"><span>Benito</span><img src="img/Chef.png" alt="chef-cook"><span>Gaspare</span></div>
 				<div class="quote">
@@ -126,12 +127,119 @@
 				</div>
 			</div>
 			
+		</section>
+
+		<section class="tastySlider">
+			<div class="container">
+
+				<div class="ready-box">
+					<p>Ready in</p>
+					<span class="rb1">40</span>
+					<span class="rb2">mins</span>
+				</div>
+				
+				<div class="swiper-container gallery-top">
+			    <div class="swiper-wrapper">
+			      <div class="swiper-slide">
+
+			      	<div class="container">
+								<div class="row">
+									<div class="slider-img sl-img-1 col-md-10 col-lg-5"></div>
+									<div class="slider-discript col-md-10 col-lg-6">
+										<h2 class="h2">Tasty pancakes</h2>
+										<span class="subTittle">season favourite</span>
+										<p class="discription">Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus.</p>
+									</div>
+								</div>
+			 				</div>
+
+			      </div>
+			      <div class="swiper-slide">
+
+			      	<div class="container">
+			      		<div class="row">
+									<div class="slider-img sl-img-2 col-md-10 col-lg-5"></div>
+									<div class="slider-discript col-md-10 col-lg-6">
+										<h2 class="h2">Tasty pancakes</h2>
+										<span class="subTittle">season favourite</span>
+										<p class="discription">Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus.</p>
+									</div>
+							</div>
+			      	</div>
+							
+			      </div>
+			      <div class="swiper-slide">
+
+			      	<div class="container">
+			      		<div class="row">
+									<div class="slider-img sl-img-3 col-md-10 col-lg-5"></div>
+									<div class="slider-discript col-md-10 col-lg-6">
+										<h2 class="h2">Tasty pancakes</h2>
+										<span class="subTittle">season favourite</span>
+										<p class="discription">Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus.</p>
+									</div>
+							</div>
+			      	</div>
+							
+			      </div>
+			      <div class="swiper-slide">
+			      	<div class="container">
+			      		<div class="row">
+									<div class="slider-img sl-img-4 col-md-10 col-lg-5"></div>
+									<div class="slider-discript col-md-10 col-lg-6">
+										<h2 class="h2">Tasty pancakes</h2>
+										<span class="subTittle">season favourite</span>
+										<p class="discription">Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus.</p>
+									</div>
+							</div>
+			      	</div>
+			      </div>
+    			</div>
+		
+					<!-- Add Arrows -->
+			    <div class="swiper-button-next swiper-button-white"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+			    <div class="swiper-button-prev swiper-button-white"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+
+				  <div class="swiper-container gallery-thumbs">
+				    <div class="swiper-wrapper">
+				      <div class="swiper-slide" style="background-image:url(img/Cake-min.png)"></div>
+				      <div class="swiper-slide" style="background-image:url(img/Sendwich-min.png)"></div>
+				      <div class="swiper-slide" style="background-image:url(img/berry-min.png)"></div>
+				      <div class="swiper-slide" style="background-image:url(img/vegetables-min.png)"></div>
+				    </div>
+				  </div>
+
+			</div>
+		</div>
+		
 
 		</section>
 	
-	
 	<link rel="stylesheet" href="css/main.min.css">
 	<script src="js/scripts.min.js"></script>
+	<script src="libs/swiper/dist/js/swiper.min.js"></script>
+	 <script>
+     var galleryTop = new Swiper('.gallery-top', {
+      spaceBetween: 20,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+      spaceBetween: 30,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      touchRatio: 0.2,
+      slideToClickedSlide: true,
+    });
+    galleryTop.controller.control = galleryThumbs;
+    galleryThumbs.controller.control = galleryTop;
+  </script>
 
 </body>
 </html>
+
+
+
+						

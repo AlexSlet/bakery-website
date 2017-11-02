@@ -9,7 +9,10 @@
 			width: 42%
 			height: 225px
 
-
+.tastySlider
+	padding: 70px 0 55px 0
+	.ready-box
+		display: none
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
@@ -29,6 +32,33 @@
 
 		p 
 			font-size: 1.5rem
+	.swiper-slide
+		padding-left: 0
+
+	.slider-img,.slider-discript
+		margin: 0 auto
+
+	.slider-img
+		height: 300px
+
+	.tastySlider
+		padding: 35px 0 25px 0
+
+	.slider-discript
+		padding: 65px 85px 140px 60px
+		.subTittle
+			margin-bottom: 0
+
+	.swiper-container .gallery-thumbs
+		right: 35%
+
+	.swiper-button-prev
+		left: 25%
+		top: 89%
+
+	.swiper-button-next
+		right: 25%
+		top: 89%
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
@@ -41,7 +71,16 @@
 
 		p 
 			font-size: 1.5rem
+	
+	.swiper-button-prev
+		left: 20%
 
+	.swiper-button-next
+		right: 20%
+	
+	.swiper-container .gallery-thumbs
+		right: 30%
+		width: 40%
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
@@ -72,7 +111,21 @@
 			&:after
 				right: -30px
 
+	.swiper-button-prev
+		left: 10%
 
+	.swiper-button-next
+		right: 10%
+	
+	.swiper-container .gallery-thumbs
+		right: 20%
+		width: 55%
+
+	h2
+		white-space: normal !important
+	
+	.slider-discript
+		padding: 30px 40px 140px 30px
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/
