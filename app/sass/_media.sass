@@ -13,9 +13,21 @@
 		padding: 70px 0 55px 0
 		.ready-box
 			display: none
+	.footer .footer-inner .footer-logo 
+    display: flex
+    margin: 0 auto
+	.footer .footer-inner .footer-menu
+		width: 100%
+		justify-content: center
+
+	.recipe-link
+		bottom: 32%
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
+	.ingredients
+		.ingr-box
+			width: 33.3%
 
 	.menu
 		display: none
@@ -60,6 +72,11 @@
 		right: 25%
 		top: 89%
 
+	.ingredients 
+    margin-top: 0
+    display: flex
+
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	.social
@@ -88,6 +105,25 @@
 	.breakfast-box-2
 	 .morning
 	 		width: 100%
+
+	.ingredients 
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		.ingr-box
+			width: 100%
+
+	.jib-img
+		img 
+    	width: 100%
+    	height: 100%
+		.ready-box-1,.ready-box-2,.ready-box-3
+  		display: none
+	
+	.recipe-link
+		left: 6%
+		bottom: 0%
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	.social
@@ -136,6 +172,12 @@
 	.breakfast-box-2
 	 .morning
 	 		width: 100%
+
+	.footer .footer-inner .footer-menu
+		li
+			padding: 0
+			a 
+				padding: 5px 7px
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/
